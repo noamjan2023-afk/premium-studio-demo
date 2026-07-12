@@ -13,7 +13,6 @@ import CustomCursor from './components/CustomCursor';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Toggle for Custom Cursor (Easy to disable for certain clients)
 const USE_CUSTOM_CURSOR = true;
 
 export default function App() {
@@ -42,8 +41,14 @@ export default function App() {
       
       {USE_CUSTOM_CURSOR && (
         <>
-          <CustomCursor />
-          <style>{`* { cursor: none !important; }`}</style>
+          <div className="hidden md:block pointer-events-none">
+            <CustomCursor />
+          </div>
+          <style>{`
+            @media (pointer: fine) {
+              * { cursor: none !important; }
+            }
+          `}</style>
         </>
       )}
       
