@@ -4,20 +4,21 @@ import gsap from 'gsap';
 export default function Hero({ isLoaded }) {
   const h1Ref = useRef();
   const pRef = useRef();
+  const btnRef = useRef();
 
   useEffect(() => {
     if (isLoaded) {
       const tl = gsap.timeline();
       tl.to('.hero-text', {
-        yPercent: -100, // Countering the translate-y-full
+        yPercent: -100,
         duration: 1.2,
         stagger: 0.15,
         ease: 'power4.out',
         delay: 0.2
       })
-      .fromTo(pRef.current, 
+      .fromTo([pRef.current, btnRef.current], 
         { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
+        { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: 'power2.out' },
         "-=0.8"
       );
     }
@@ -35,6 +36,15 @@ export default function Hero({ isLoaded }) {
           <p ref={pRef} className="text-lg md:text-xl font-light text-neutral-300 max-w-md mt-6 opacity-0">
             We architect tomorrow's physical realities. A premium design studio crafting immersive, sustainable, and visceral environments.
           </p>
+          <div ref={btnRef} className="mt-10 opacity-0 pt-4">
+            <button 
+              data-magnetic="true"
+              onClick={() => document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })}
+              className="px-8 py-4 bg-white/5 border border-white/20 hover:border-accent hover:shadow-[0_0_20px_rgba(0,240,255,0.3)] hover:text-accent rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 backdrop-blur-md"
+            >
+              Start Project
+            </button>
+          </div>
         </div>
         <div className="hidden md:block">
         </div>

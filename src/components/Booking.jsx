@@ -1,6 +1,6 @@
 export default function Booking() {
   return (
-    <section className="py-32 w-full min-h-screen flex items-center justify-center z-10 relative">
+    <section id="booking" className="py-32 w-full min-h-screen flex items-center justify-center z-10 relative">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-7xl font-display font-black tracking-tighter uppercase mb-6">Initiate Contact</h2>

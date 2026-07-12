@@ -7,6 +7,7 @@ import Scene3D from './Scene3D';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Showcase from './components/Showcase';
+import Trust from './components/Trust';
 import Booking from './components/Booking';
 import Preloader from './components/Preloader';
 import CustomCursor from './components/CustomCursor';
@@ -64,6 +65,7 @@ export default function App() {
         <Hero isLoaded={isLoaded} />
         <Services />
         <Showcase />
+        <Trust />
         <Booking />
       </main>
 
