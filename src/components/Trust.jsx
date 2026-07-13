@@ -5,10 +5,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: '42+', label: 'Projects Completed' },
-  { value: '15', label: 'Industry Awards' },
-  { value: '20M', label: 'Sq. Ft. Designed' },
-  { value: 'Global', label: 'Clientele' },
+  { value: '15+', label: 'שנות ניסיון' },
+  { value: '24/7', label: 'שירות חירום' },
+  { value: '100%', label: 'אחריות מלאה' },
+  { value: '5K+', label: 'לקוחות מרוצים' },
 ];
 
 export default function Trust() {

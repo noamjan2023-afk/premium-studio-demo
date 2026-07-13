@@ -41,13 +41,13 @@ export default function Hero({ isLoaded }) {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="flex flex-col space-y-6">
           <h1 ref={h1Ref} className="text-6xl md:text-8xl font-display font-black tracking-tighter uppercase text-white leading-none">
-            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full">Otoflash</span></span>
-            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">Premium</span></span>
-            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full">Detailing</span></span>
+            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full">אינסטלציה</span></span>
+            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">ברמה</span></span>
+            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full">אחרת</span></span>
           </h1>
 
           <p ref={pRef} className="text-lg md:text-xl font-light text-neutral-300 max-w-md opacity-0 leading-relaxed">
-            High-end automotive styling and ceramic protection. We bring luxury vehicles back to absolute perfection, blending cutting-edge nano-technology with obsessive attention to detail.
+            פתרונות אינסטלציה מתקדמים ללקוחות פרטיים ועסקיים. שירות אמין, מקצועי ומהיר באזור המרכז.
           </p>
 
           {/* New Interactive Call To Action */}
@@ -57,7 +57,7 @@ export default function Hero({ isLoaded }) {
               data-magnetic="true"
               className="px-8 py-4 bg-transparent border border-white text-white font-display font-bold tracking-widest uppercase text-sm rounded-full hover:bg-white hover:text-obsidian transition-all duration-300 shadow-lg hover:shadow-accent/20"
             >
-              Get a Quote
+              קבל הצעת מחיר
             </button>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Hero({ isLoaded }) {
         </div>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-70 animate-bounce">
-        <span className="text-sm tracking-[0.3em] uppercase mb-2 font-light">Scroll</span>
+        <span className="text-sm tracking-[0.3em] uppercase mb-2 font-light">גלול</span>
         <div className="w-[1px] h-12 bg-white/50"></div>
       </div>
     </section>

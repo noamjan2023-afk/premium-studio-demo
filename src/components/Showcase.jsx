@@ -2,24 +2,24 @@ import { useRef } from 'react';
 
 const projects = [
   { 
-    title: 'Mercedes S-Class', 
-    type: 'Paint Correction', 
-    img: 'https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&w=1200&q=80' 
+    title: 'התקנת צנרת SP', 
+    type: 'תשתיות מים', 
+    img: 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1200&q=80' 
   },
   { 
-    title: 'Porsche 911', 
-    type: 'Ceramic Coating', 
-    img: 'https://images.unsplash.com/photo-1503376710972-8862f92470a1?auto=format&fit=crop&w=1200&q=80' 
+    title: 'שיפוץ חדר רחצה יוקרתי', 
+    type: 'גמר מושלם', 
+    img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80' 
   },
   { 
-    title: 'G-Wagon', 
-    type: 'Interior Detail', 
-    img: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1200&q=80' 
+    title: 'מערכות חימום תת רצפתי', 
+    type: 'טכנולוגיה מתקדמת', 
+    img: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80' 
   },
   { 
-    title: 'Audi RS6', 
-    type: 'Full PPF Wrap', 
-    img: 'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=1200&q=80' 
+    title: 'החלפת קווי ביוב', 
+    type: 'תשתיות חוץ', 
+    img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=80' 
   }
 ];
 
@@ -51,7 +51,7 @@ export default function Showcase() {
     <section className="w-full py-32 bg-obsidian z-10 relative overflow-hidden">
       <div className="container mx-auto px-6 mb-12">
         <h2 className="text-4xl md:text-6xl font-display font-bold tracking-tight uppercase">
-          Recent Details
+          פרויקטים אחרונים
         </h2>
       </div>
 
@@ -80,7 +80,7 @@ export default function Showcase() {
             {/* Overlay Gradient for Typography Visibility */}
             <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent opacity-90 pointer-events-none" />
 
-            <div className="absolute bottom-10 left-10 transform translate-y-4 opacity-100 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 pointer-events-none">
+            <div className="absolute bottom-10 right-10 transform translate-y-4 opacity-100 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 pointer-events-none">
               <h3 className="text-3xl md:text-4xl font-display font-bold text-white">{project.title}</h3>
               <p className="text-accent uppercase tracking-widest mt-2 text-sm font-medium">{project.type}</p>
             </div>

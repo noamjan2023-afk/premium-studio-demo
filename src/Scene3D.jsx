@@ -136,8 +136,7 @@ export default function Scene3D() {
     <>
       <Environment preset="city" />
       <ambientLight intensity={0.5} />
-      <directionalLight position={[10, 10, 5]} intensity={1.5} color="#00F0FF" />
-      <directionalLight position={[-10, -10, -5]} intensity={1} color="#FF00F0" />
+      <directionalLight position={[-10, -10, -5]} intensity={1} color="#0044FF" />
       
       <mesh ref={meshRef} position={[0, 0, 0]} castShadow receiveShadow>
         <sphereGeometry args={[1.5, 128, 128]} />
