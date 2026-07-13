@@ -11,6 +11,7 @@ import Trust from './components/Trust';
 import Booking from './components/Booking';
 import Preloader from './components/Preloader';
 import CustomCursor from './components/CustomCursor';
+import SchemaMarkup from './components/SchemaMarkup';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,6 +55,8 @@ export default function App() {
       )}
       
       {!isLoaded && <Preloader onComplete={() => setIsLoaded(true)} />}
+
+      <SchemaMarkup />
 
       <div id="canvas-container" className="fixed inset-0 pointer-events-none z-0">
         <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
