@@ -12,6 +12,7 @@ import Booking from './components/Booking';
 import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import MobileBottomBar from './components/MobileBottomBar';
 import CustomCursor from './components/CustomCursor';
 import SchemaMarkup from './components/SchemaMarkup';
 
@@ -41,7 +42,7 @@ export default function App() {
   }, [isLoaded]);
 
   return (
-    <div className="relative w-full bg-obsidian text-neutral-100 min-h-screen font-sans selection:bg-accent selection:text-obsidian">
+    <div className="relative w-full bg-obsidian text-neutral-100 min-h-screen font-sans selection:bg-accent selection:text-obsidian pb-20 md:pb-0">
       
       {USE_CUSTOM_CURSOR && (
         <>
@@ -60,6 +61,7 @@ export default function App() {
 
       <SchemaMarkup />
       <Navbar />
+      <MobileBottomBar />
 
       <div id="canvas-container" className="fixed inset-0 pointer-events-none z-0">
         <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>

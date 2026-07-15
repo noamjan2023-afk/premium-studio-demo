@@ -51,11 +51,11 @@ export default function Hero({ isLoaded }) {
           </p>
 
           {/* New Interactive Call To Action */}
-          <div ref={ctaRef} className="opacity-0 pt-4 flex flex-wrap gap-4">
+          <div ref={ctaRef} className="opacity-0 pt-4 flex flex-col sm:flex-row gap-4 w-full max-w-lg">
             <button
               onClick={scrollToContact}
               data-magnetic="true"
-              className="px-8 py-4 bg-transparent border border-white text-white font-display font-bold tracking-widest uppercase text-sm rounded-full hover:bg-white hover:text-obsidian transition-all duration-300 shadow-lg hover:shadow-accent/20"
+              className="w-full sm:w-auto px-8 py-4 bg-transparent border border-white text-white font-display font-bold tracking-widest uppercase text-sm rounded-full hover:bg-white hover:text-obsidian transition-all duration-300 shadow-lg hover:shadow-accent/20"
             >
               קבל הצעת מחיר
             </button>
@@ -63,7 +63,7 @@ export default function Hero({ isLoaded }) {
               href="YOUR_DIRECT_WRITE_REVIEW_LINK"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-white text-obsidian font-display font-bold tracking-widest uppercase text-sm rounded-full hover:bg-neutral-200 transition-all duration-300 shadow-lg flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-4 bg-white text-obsidian font-display font-bold tracking-widest uppercase text-sm rounded-full hover:bg-neutral-200 transition-all duration-300 shadow-lg flex items-center justify-center gap-2"
             >
               <span>כתבו ביקורת</span>
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
