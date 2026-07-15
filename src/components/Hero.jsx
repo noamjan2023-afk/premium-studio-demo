@@ -47,7 +47,7 @@ export default function Hero({ isLoaded }) {
           </h1>
 
           <p ref={pRef} className="text-lg md:text-xl font-light text-neutral-300 max-w-md opacity-0 leading-relaxed">
-            פתרונות אינסטלציה מתקדמים ללקוחות פרטיים ועסקיים. שירות אמין, מקצועי ומהיר באזור המרכז.
+            מחפשים אינסטלטור בראשון לציון? אלכס ידי זהב מציע פתרונות אינסטלציה מתקדמים, שירות חרום 24/7 והגעה אקספרס עד הבית.
           </p>
 
           {/* New Interactive Call To Action */}
