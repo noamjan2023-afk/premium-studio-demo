@@ -69,8 +69,8 @@ export default function Booking() {
                   <input type="text" className="bg-transparent border-b border-white/20 focus:border-accent text-white py-3 outline-none transition-colors" placeholder="ישראל ישראלי" />
                 </div>
                 <div className="flex flex-col space-y-2">
-                  <label className="text-xs uppercase tracking-widest text-neutral-500 font-semibold">אימייל</label>
-                  <input type="email" className="bg-transparent border-b border-white/20 focus:border-accent text-white py-3 outline-none transition-colors" placeholder="israel@example.com" />
+                  <label className="text-xs uppercase tracking-widest text-neutral-500 font-semibold">טלפון (חובה)</label>
+                  <input type="tel" className="bg-transparent border-b border-white/20 focus:border-accent text-white py-3 outline-none transition-colors text-right" placeholder="05x-xxxxxxx" dir="ltr" />
                 </div>
               </div>
               <div className="flex flex-col space-y-2">
