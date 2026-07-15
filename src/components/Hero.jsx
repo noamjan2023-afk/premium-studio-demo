@@ -41,9 +41,9 @@ export default function Hero({ isLoaded }) {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="flex flex-col space-y-6">
           <h1 ref={h1Ref} className="text-6xl md:text-8xl font-display font-black tracking-tighter uppercase text-white leading-none">
+            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full">אלכס</span></span>
+            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">ידי זהב</span></span>
             <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full">אינסטלציה</span></span>
-            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">ברמה</span></span>
-            <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full">אחרת</span></span>
           </h1>
 
           <p ref={pRef} className="text-lg md:text-xl font-light text-neutral-300 max-w-md opacity-0 leading-relaxed">

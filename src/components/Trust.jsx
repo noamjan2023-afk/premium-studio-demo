@@ -79,7 +79,7 @@ export default function Trust() {
 
             <div className="flex justify-center">
               <a
-                href="https://www.google.com/maps/place/24%2F7+%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA+%D7%90%D7%99%D7%A0%D7%A1%D7%98%D7%9C%D7%98%D7%95%D7%A8+%D7%90%D7%9C%D7%9B%D7%A1+%D7%99%D7%93%D7%99+%D7%96%D7%94%D7%91%E2%80%AD/@31.9452365,34.7357144,12z/data=!4m12!1m2!2m1!1z15DXnNeb16Eg15nXk9eZINeW15TXkQ!3m8!1s0xa92f6e04ec6f161d:0xf85fe256f8eedfa2!8m2!3d31.951997!4d34.7879026!9m1!1b1!15sChbXkNec15vXoSDXmdeT15kg15bXlNeRkgEHcGx1bWJlcuABAA!16s%2Fg%2F11z0wz8mqs?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D"
+                href="YOUR_DIRECT_WRITE_REVIEW_LINK"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center space-x-3 rtl:space-x-reverse bg-white text-obsidian px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:bg-neutral-100 hover:shadow-xl hover:shadow-white/20"

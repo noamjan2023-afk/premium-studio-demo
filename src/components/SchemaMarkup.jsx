@@ -13,10 +13,8 @@ const SchemaMarkup = () => {
     "description": "אלכס ידי זהב - אינסטלטור מומחה לפתיחת סתימות מורכבות ומקרי חירום 24/7 בראשון לציון והסביבה. הגעה אקספרס על דו-גלגלי ללא עיכובי פקקים וחניה. שירות מקצועי ואדיב בעברית וברוסית.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Hacarmel Street 10",
       "addressLocality": "Rishon LeZion",
       "addressRegion": "Center District",
-      "postalCode": "7526517",
       "addressCountry": "IL"
     },
     "geo": {
