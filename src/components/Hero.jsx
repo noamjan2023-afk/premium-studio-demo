@@ -46,7 +46,7 @@ export default function Hero({ isLoaded }) {
             <span className="block overflow-hidden pb-2"><span className="hero-text block translate-y-full">אינסטלציה</span></span>
           </h1>
 
-          <p ref={pRef} className="text-lg md:text-xl font-light text-neutral-300 max-w-md opacity-0 leading-relaxed">
+          <p ref={pRef} className="text-xl md:text-2xl font-medium text-white max-w-md opacity-0 leading-relaxed">
             מחפשים אינסטלטור בראשון לציון? אלכס ידי זהב מציע פתרונות אינסטלציה מתקדמים, שירות חרום 24/7 והגעה אקספרס עד הבית.
           </p>
 

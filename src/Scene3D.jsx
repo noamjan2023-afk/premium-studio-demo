@@ -1,4 +1,4 @@
-import { useRef, useMemo } from 'react';
+import { useRef, useMemo, useState, useEffect } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import { MathUtils } from 'three';
 import { Environment } from '@react-three/drei';
@@ -6,6 +6,14 @@ import * as THREE from 'three';
 
 export default function Scene3D() {
   const meshRef = useRef();
+  
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   
   const { viewport } = useThree();
   const mouse = useRef(new THREE.Vector2());
@@ -138,7 +146,7 @@ export default function Scene3D() {
       <ambientLight intensity={0.5} />
       <directionalLight position={[-10, -10, -5]} intensity={1} color="#0044FF" />
       
-      <mesh ref={meshRef} position={[0, 0, 0]} castShadow receiveShadow>
+      <mesh ref={meshRef} position={[0, 0, 0]} scale={isMobile ? 0.6 : 1} castShadow receiveShadow>
         <sphereGeometry args={[1.5, 128, 128]} />
         <meshPhysicalMaterial
           color="#ffffff"
